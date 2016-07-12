@@ -9,7 +9,7 @@ using TeduShop.Model.Models;
 namespace TeduShop.Data.Repositories
 {
     //Định nghĩa phương thức cần thêm
-    public interface IProductCategoryRepository
+    public interface IProductCategoryRepository : IRepository<ProductCategory>
     {
         IEnumerable<ProductCategory> GetByAlias(string alias);
     }
