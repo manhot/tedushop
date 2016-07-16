@@ -14,6 +14,8 @@ namespace TeduShop.Data
         {
             //Khi load bản cha, ko tự động include bản con
             this.Configuration.LazyLoadingEnabled = false;
+            //Fix lỗi context has changed since database was created
+            Database.SetInitializer<TeduShopDbContext>(null);
         }
 
         public DbSet<Footer> Footers { get; set; }

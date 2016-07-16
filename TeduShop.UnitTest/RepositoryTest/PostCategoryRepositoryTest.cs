@@ -25,7 +25,7 @@ namespace TeduShop.UnitTest.RepositoryTest
         public void PostCategory_Repository_GetAll()
         {
             var list = objRepository.GetAll().ToList();
-            Assert.AreEqual(5, list.Count);
+            Assert.AreEqual(6, list.Count);
         }
 
         [TestMethod]
